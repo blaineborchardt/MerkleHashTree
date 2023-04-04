@@ -70,16 +70,16 @@ class MerkleTree:
       return self.root.value
   
 def mixmerkletree() -> None:
-    elems = ["GeeksforGeeks", "A", "Computer", "Science", "Portal", "For", "Geeks"]
+    elems = ["Hash0-0", "Hash0-1", "Hash1-0", "Hash1-1", "Hash2-0", "Hash2-1", "Hash3-0"]
     #as there are odd number of inputs, the last input is repeated
     print("Inputs: ")
     print(*elems, sep=" | ")
     print("")
     mtree = MerkleTree(elems)
-    print("Root Hash: "+mtree.getRootHash()+"\n")
+    print("Top Hash: "+mtree.getRootHash()+"\n")
     mtree.printTree()
  
  
 mixmerkletree()
  
-#This code was contributed by Pranay Arora (TSEC-2023).
+
